@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Text Hover with Underline */
+.nav-link {
+    color: #00796b;
+    position: relative; /* Dibutuhkan untuk pseudo-element */
+    text-decoration: none; /* Menghapus underline bawaan */
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: ""; /* Membuat pseudo-element kosong */
+    position: absolute;
+    bottom: -2px; /* Jarak underline dari teks */
+    left: 0;
+    width: 0;
+    height: 2px; /* Ketebalan underline */
+    background-color: #00796b; /* Warna underline */
+    transition: width 0.3s ease-in-out; /* Animasi */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Underline muncul penuh saat hover */
+    background-color: #00796b;
+}
+
+
+/* Works Section Styling */
+#layanan {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Latar belakang cerah */
+    text-align: center;
+}
+
+#layanan h2 {
+    font-size: 48px;
+    font-family: "Acme", serif;
+    font-weight: 500;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+#layanan .sub-title {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+/* Card Styling */
+.card-layanan {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e8f5e9, #ffffff); /* Gradasi warna */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-layanan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Circle Icon Styling */
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #00796b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.circle-icon img {
+    width: 50px;
+    height: 40px;
+}
+
+/* Card Text Styling */
+.card-layanan h3 {
+    color: #00796b;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card-layanan p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #layanan {
+        padding: 50px 10px;
+    }
+
+    .card-layanan {
+        margin-bottom: 20px;
+    }
+
+    #layanan h2 {
+        font-size: 36px;
+    }
+
+    #layanan .sub-title {
+        font-size: 16px;
+    }
+}
+
+.work-card {
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.work-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 121, 107, 0.5); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.services-wrapper {
+    padding: 60px 0;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-success {
+    color: #00796b; /* Customize icon color */
+}
+
+.testimonial-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #444;
+    font-weight: 600;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-content {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial-author img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.testimonial-author h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.testimonial-author p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color:black; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks */
+    padding: 40px 20px; /* Padding atas dan bawah, kiri dan kanan */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Membungkus elemen jika diperlukan */
+    justify-content: space-between; /* Menyebar elemen secara merata */
+}
+
+/* Footer left section */
+.footer-left {
+    flex: 1; /* Mengambil ruang yang tersedia */
+    max-width: 400px; /* Maksimal lebar */
+}
+
+.footer-left img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+.footer-left p {
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.socials {
+    display: flex; /* Menggunakan flexbox untuk ikon sosial */
+}
+
+.socials a {
+    color: #fff; /* Warna ikon */
+    margin-right: 15px; /* Jarak antar ikon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 20px; /* Ukuran font untuk ikon */
+}
+
+/* Footer Styles */
+.footer {
+    background-color:black; /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    padding: 40px 0; /* Padding atas dan bawah */
+}
+
+.footer h2 {
+    font-size: 1.5rem; /* Ukuran font untuk judul */
+    margin-bottom: 15px; /* Jarak bawah untuk judul */
+    font-weight: bold; /* Menebalkan teks judul */
+}
+
+.footer ul {
+    padding-left: 0; /* Menghilangkan padding kiri pada daftar */
+}
+
+.footer ul li {
+    margin-bottom: 10px; /* Jarak antar item daftar */
+}
+
+.footer ul li a {
+    color: #ffffff; /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.footer ul li a:hover {
+    color: black; /* Warna saat hover */
+}
+
+.footer-divider {
+    border-top: 1px solid white; /* Warna garis pemisah */
+    margin: 20px 0; /* Margin atas dan bawah untuk garis pemisah */
+}
+
+.footer-bottom {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+.social-icons {
+    margin-top: 15px; /* Jarak atas untuk ikon sosial */
+}
+
+.social-icons a {
+    color: #ffffff; /* Warna ikon sosial */
+    font-size: 1.5rem; /* Ukuran font untuk ikon sosial */
+    margin-right: 15px; /* Jarak antar ikon */
+    transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.social-icons a:hover {
+    color: #00796b; /* Warna saat hover */
+}
+/* Footer Styling */
+.footer {
+   background-color: #00796b;
+    color:white; /* Warna teks abu-abu terang */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black; /* Aksen emas */
+  }
+  
+  .footer-links a,
+  .footer-contact a {
+    color: #d1d5db; /* Teks abu-abu terang */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    color: black; /* Warna emas saat hover */
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: black; /* Aksen emas saat hover */
+  }
+  
+  .footer-divider {
+    border-color: white; /* Divider lembut */
+    opacity: 0.5;
+  }
+  
+  /* Footer Bottom */
+  .footer p {
+    font-size: 14px;
+    color: #9ca3af; /* Abu-abu lebih terang */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Why Us Section */
+  .why-us {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-title .highlight {
+    color: #00796b;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Grid */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-card .icon {
+    font-size: 40px;
+    color: #00796b;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00796b;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  

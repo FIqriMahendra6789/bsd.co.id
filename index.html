@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="t.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Modern Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar position-sticky top-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="t.png" alt="Logo" class="logo img-fluid" style="max-width: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav mx-auto text-success">
+                    <li>
+                        <a class="nav-link" href="#about" style="color: #00796b;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works"style="color: #00796b;">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="color: #00796b;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial" style="color: #00796b;">Testimonial</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-success">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+
+    <!-- Jumbotron -->
+    <section class="text-success py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>
+                        <span id="typed-text"></span><span id="cursor">|</span>
+                      </h1>
+                    <p style="color: black;">We are excited to have you join us at BSD! Here, you will find a wealth of information and opportunities that can help you grow. We believe that every individual has great potential, and we are committed to supporting your journey towards success.</p>
+                    <a href="#" class="btn btn-outline-success btn-lg">Let's Talk</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="showcase.png" class="img-fluid w-100 d-none d-lg-block" alt="Showcase Image">
+                </div>
+            </div>
+        </div>
+    </section>
+       <section>
+        <section>
+            <img src="Presentation1.gif" class="img-fluid" width="100%" style="margin-top: 30px;">
+        </section>
+       </section>
+<section id="about" class="bg-light py-5">
+    <div class="container py-5">
+        <h1 class="display-4 text-center" style="color: black;">About <span style="color: #00796b;">Us</span></h1>
+        <br><br>
+        <h3 class="display-5 text-dark">Best Software Development</h3>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div id="about-text" style="font-size: 1.2rem; line-height: 1.8; color: #666;"></div>
+                <a href="#" class="btn btn-success btn-lg mt-3">Learn More</a>
+                <br><br>
+            </div>
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <img src="o.jpeg" alt="Teamwork" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: rgba(0, 0, 0, 0.5); border-radius: .5rem;">
+                        <h4 class="text-white text-center">Join Our Team</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4" style="color: black;">Your <span style="color: #00796b;">Problem Solver</span></h1>
+                <p class="lead" style="color: black;">Experience unmatched anywhere else, with knowledgeable and thoughtful consultants plus flexible, tailored approaches — all centered on the right outcomes for your business.</p>
+                <a href="#" class="btn btn-outline-success btn-lg" style="width: 200px;">Search For More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section id="works" class="py-5" style="background-color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h1 class="display-4" style="color: black;">Our <span style="color: #00796b;">Works</span></h1>
+                <p class="sub-title text-muted">Discover the amazing projects we’ve completed for our clients.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="IT Consultant" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">We provide expert IT consultancy services to help businesses optimize their technology strategies and improve efficiency.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="Web Development" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">Our team builds responsive and user-friendly websites tailored to your business needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="Mobile App Development" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">We create innovative mobile applications that enhance user engagement and drive business growth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="Cloud Solutions" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">Our cloud solutions help businesses scale efficiently while ensuring data security and accessibility.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="Digital Marketing" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">We develop comprehensive digital marketing strategies to enhance your online presence and reach your target audience.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card p-4 shadow-sm work-card" style="background-color: #f8f9fa;">
+                    <img src="gambar.gif" alt="Digital Marketing" class="img-fluid mb-3" style="max-height: 200px; object-fit: cover;">
+                    <p class="mt-3 text-muted">We develop comprehensive digital marketing strategies to enhance your online presence and reach your target audience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <img src="oop.gif" class="img-fluid" width="100%">
+</section>
+
+<!-- End Works Section -->
+<section style="background-color: #f9f9f9;">
+    <div class="container">
+        <div class="services-wrapper text-center mb-5" id="services">
+            <h1 class="display-4" style="color: black;">Our <span style="color: #00796b;">Services</span></h1>
+            <p class="sub-title text-muted">Our Exclusive Services for You</p>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-brands fa-chromecast fa-3x  mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Business Strategy</h2>
+                            <p class="card-text">We provide expert IT consultancy services to help businesses optimize their technology strategies and improve efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-solid fa-layer-group fa-3x mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Web Development</h2>
+                            <p class="card-text">Our team builds responsive and user-friendly websites tailored to your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-solid fa-mobile-alt fa-3x  mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Mobile App Development</h2>
+                            <p class="card-text">We create innovative mobile applications that enhance user engagement and drive business growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-solid fa-chart-line fa-3x  mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Marketing And Reporting</h2>
+                            <p class="card-text">We develop comprehensive digital marketing strategies to enhance your online presence and reach your target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-solid fa-paint-brush fa-3x mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Graphic Design</h2>
+                            <p class="card-text">Our creative team designs visually appealing graphics that effectively communicate your brand message.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body border border-success">
+                            <i class="fa-solid fa-video fa-3x mb-3" style="color: #00796b;"></i>
+                            <h2 class="card-title">Video Production</h2>
+                            <p class="card-text">We produce high-quality videos that engage your audience and tell your brand story effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-container">
+  <h1 class="display-4" style="color: black;">Customer <span style="color: #00796b;"> Feedback</span></h1>
+
+    <div class="testimonial-grid" id="testimonial">
+        <article class="testimonial">
+            <div class="testimonial-content">
+                <p>"Lenyshop provides excellent customer service and high-quality products. I am very satisfied with my experience!"</p>
+            </div>
+            <div class="testimonial-author">
+                <img src="coding.jpg" alt="Customer 1">
+                <h3>Jane Doe</h3>
+                <p>Verified Buyer</p>
+            </div>
+        </article>
+
+        <article class="testimonial">
+            <div class="testimonial-content">
+                <p>"Fast delivery and great prices! I will definitely shop here again. Highly recommend!"</p>
+            </div>
+            <div class="testimonial-author">
+                <img src="o.jpeg" alt="Customer 2">
+                <h3>John Smith</h3>
+                <p>Verified Buyer</p>
+            </div>
+        </article>
+
+        <article class="testimonial">
+            <div class="testimonial-content">
+                <p>"The quality of the products exceeded my expectations. Very pleased with my purchase."</p>
+            </div>
+            <div class="testimonial-author">
+                <img src="44.jpg" alt="Customer 3">
+                <h3>Alice Johnson</h3>
+                <p>Verified Buyer</p>
+            </div>
+        </article>
+    </div>
+</section>
+</div>
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="highlight" style="color: black;">Why </span><Span style="color: #00796b;">Should Us?</Span>
+      </h2>
+      <p class="section-subtitle">
+        Are you seeking a dynamic IT consultant to elevate your business to new heights? 
+        Look no further – we've got the winning edge!
+      </p>
+      <div class="features">
+        <div class="feature-card">
+          <div class="icon">
+            <i class="fas fa-tag"></i>
+          </div>
+          <h3>Flexible Pricing</h3>
+          <p>Our flexible pricing ensures you get the best value for your investment.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Seamless Pre-Contact</h3>
+          <p>We understand that the journey begins before the contract is signed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Performance Preview</h3>
+          <p>We conduct periodic reviews to assess and enhance our services.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>Agile Management</h3>
+          <p>We implement strategies that adapt to changes, ensuring alignment with your goals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>OKR Mastery</h3>
+          <p>Our team is skilled at using OKRs to measure and achieve business success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="cta-section d-flex align-items-center justify-content-center">
+    <div class="container text-center d-flex flex-lg-row flex-column align-items-center justify-content-between">
+        <div class="image-container">
+            <img src="7.jpg" alt="Database Illustration" class="img-fluid">
+        </div>
+        <div class="text-content">
+            <h1 style="color: black;">Enjoying what <span class="highlight" style="color: #00796b;">you've seen so far?</span></h1>
+            <p>We're opening wide doors of collaboration for you, offering exceptional contributions and services. <span class="highlight">Let's embark on a journey of growth together!</span></p>
+            <a href="#" class="btn btn-success">Get In Touch!</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer bg-gradient text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 mb-4">
+          <h4 class="footer-heading" style="margin-right: 40px;">BSD Software Development</h4>
+          <p style="color: white;">Discover software and web development like never before with BSD. Our services are not just affordable and stylish but also tailor-made to meet your unique needs.</p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="col-lg-4 mb-4">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="col-lg-4 mb-4">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="list-unstyled footer-contact">
+            <li>Email: <a href="mailto:Bsdbestdeveloment@gmail.com">Bsdbestdeveloment@gmail.com</a></li>
+            <li>Phone: <a href="tel:085332095920">0895175450099</a></li>
+            <li>Address: Jln.Budi Karya No.2 Pontianak </li>
+          </ul>
+          <p style="color: white;">Follow us on:</p>
+          <div>
+            <a href="#" class="text-white mx-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-white mx-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-white mx-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="footer-divider my-10">
+      <p class="mt-3 text-center" style="color: white;">© 2025 Bsdbestdeveloment. All rights reserved.</p>
+      <!-- Footer Bottom -->
+    </div>
+  </footer>
+  
+  
+  
+
+
+
+
+
+</body>
+</html>
